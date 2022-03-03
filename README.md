@@ -72,3 +72,42 @@ The "High Risk" precision rate did not improve was only 1%
 "Low Risk" still showed a precision rate of 100% with the recall remaining at 61%.
 
 ![credit_risk_11](https://github.com/FUNMIIB/Credit_Risk_Analysis/blob/main/credit_risk_11.png)
+
+**Deliverable 3**
+
+Use Ensemble Classifiers to Predict Credit Risk
+Compare two new Machine Learning models that reduce bias to predict credit risk. The models classified 51,366 as High Risk and 246 as Low Risk.
+
+![credit_risk_13](https://github.com/FUNMIIB/Credit_Risk_Analysis/blob/main/credit_risk_13.png)
+
+BalancedRandomForestClassifier Model, two trees of the same size and equal size to the minority class are constructed to represent one for the majority class and one for the minority class.
+
+The balanced accuracy score increased to 78.9% for this model.
+
+![credit_risk_14](https://github.com/FUNMIIB/Credit_Risk_Analysis/blob/main/credit_risk_14.png)
+
+The "High Risk precision rate increased to 3% with the recall at 70% giving this model an F1 score of 6%.
+"Low Risk" still had a precision rate of 100% with the recall at 87%.
+The top feature by importance was "total_rec_prncp" at 7.9% of the total.
+
+![credit_risk_15](https://github.com/FUNMIIB/Credit_Risk_Analysis/blob/main/credit_risk_15.png)
+
+EasyEnsembleClassifier Model, a set of classifiers where individual decisions are combined to classify new examples.
+
+The balanced accuracy score increased to 93.2% with this model.
+
+![credit_risk_16](https://github.com/FUNMIIB/Credit_Risk_Analysis/blob/main/credit_risk_16.png)
+
+The "High Risk precision rate increased to 9% with the recall at 92% giving this model an F1 score of 16%.
+"Low Risk" still had a precision rate of 100% with the recall now at 94%.
+
+![credit_risk_17](https://github.com/FUNMIIB/Credit_Risk_Analysis/blob/main/credit_risk_17.png)
+
+**Deliverable 4**
+**Summary**
+
+The EasyEnsembleClassifer model yielded the best results with an accuracy rate of 93.2% and a 9% precision rate when predicting "High Risk candidates. The sensitivity rate was also the highest at 92% compared to the other models. The result for predicting "Low Risk" was also the highest with the sensitivity rate at 94% and an F1 score of 97%. 
+
+
+Therefore, to perform this type of analysis, EasyEnsembleClassifier Model is recommended. 
+
